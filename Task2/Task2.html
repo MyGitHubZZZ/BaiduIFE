@@ -2,162 +2,192 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>任务二</title>
+    <title>项目二</title>
     <style type="text/css">
         head,body {
             margin: 0px;
             padding: 0px;
         }
         #main-container {
-            background-color:#F1EDEC;
-            width:100%;
-            height:auto;
-            float:left;
+            background-color: #F1EDEC;
+            width: 100%;
+            height: auto;
+            overflow: auto;
+            zoom: 1;
         }
+
         #header-container {
-            background-color:rgb(40,40,40);
-            float:left;
-            width:100%;
-            height:auto;
-            margin:0px;
+            background-color: rgb(40,40,40);
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            overflow: auto;
+            zoom: 1;
         }
+
         header {
-            color:red;
-            float:left;
-            margin-left:30px;
+            color: red;
+            float: left;
+            margin-left: 30px;
         }
+
         footer {
-            background-color:rgb(40,40,40);
+            background-color: rgb(40,40,40);
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: white;
+            margin-top: 15px;
             float:left;
-            width:100%;
-            height:auto;
-            text-align:center;
-            color:white;
-            margin-top:15px;
         }
-        nav li{
-            float:right;
-            margin:10px;
+
+        nav li {
+            float: right;
+            margin: 10px;
         }
+
             nav li a {
-                color:white;
+                color: white;
             }
-            nav li a:hover{
-                color:blue;
-            }
-            nav li a:visited{
-                color:grey;
-            }
+
+                nav li a:hover {
+                    color: blue;
+                }
+
+                nav li a:visited {
+                    color: grey;
+                }
+
         .content-container {
-            background-color:white;
-            margin: 1% 1% 0px 1%;
+            background-color: white;
+            margin: 1% auto 0 auto;
             width:94%;
-            float:right;
-            border-bottom:solid;
-            border-right:solid;
-            border-color:gray;
-            border-width:1px;
-            padding:20px;
+            overflow: auto;
+            zoom: 1;
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 1px;
+            -moz-box-shadow: 1px 1px 1px;
+            box-shadow: 1px 1px 1px;
         }
+
             .content-container h4 {
-                color:rgb(128,128,128);            
+                color: rgb(128,128,128);
             }
+
             .content-container .writerandtime {
-                font-size:small;
-                color:rgb(128,128,128);  
+                font-size: small;
+                color: rgb(128,128,128);
             }
+
             .content-container p {
-                line-height:30px;
+                line-height: 30px;
             }
+
             .content-container ul li {
-                list-style:none;
+                list-style: none;
             }
-            .content-container .img-container {   
-                border:solid;
-                border-color:gray;
-                border-width:1px;
-                width:200px;
-                height:200px;
-                padding:8px;
-                text-align:center;
+
+            .content-container .img-container {
+                border: solid;
+                border-color: gray;
+                border-width: 1px;
+                width: 200px;
+                height: 200px;
+                padding: 8px;
+                text-align: center;
             }
+
                 .content-container .img-container img {
-                    width:175px;
-                    height:175px;      
-                    margin-top:8px;
+                    width: 175px;
+                    height: 175px;
+                    margin-top: 8px;
                 }
+
                 .content-container .img-container span {
-                    width:100%;
-                    text-align:center;
-                    vertical-align:central;
+                    width: 100%;
+                    text-align: center;
+                    vertical-align: central;
                 }
+
             .content-container .content-table {
-                width:100%;
-                border-spacing:0;
-                border:solid;
-                border-width:1px;
-                border-color:gray;
+                width: 100%;
+                border-spacing: 0;
+                border: solid;
+                border-width: 1px;
+                border-color: gray;
             }
+
                 .content-container .content-table td {
-                    border-spacing:0;
-                    border:solid;
-                    border-width:1px;
-                    border-color:gray;
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
                 }
+
                 .content-container .content-table th {
-                    color:white;
-                    background-color:black;
-                    border-spacing:0;
-                    border:solid;
-                    border-width:1px;
-                    border-color:gray;
+                    color: white;
+                    background-color: black;
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
                 }
-                 .content-container .content-table .table-sum {
-                    color:black;
-                    background-color:grey;
-                    border-spacing:0;
-                    border:solid;
-                    border-width:1px;
-                    border-color:gray;
+
+                .content-container .content-table .table-sum {
+                    color: black;
+                    background-color: grey;
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
                 }
+
             .content-container .side-column {
-                border-left:solid;
-                border-width:3px;
-                border-color:gray;
+                border-left: solid;
+                border-width: 3px;
+                border-color: gray;
                 padding: 10px 0px 10px 10px;
             }
+
                 .content-container .side-column h3 {
-                   padding-left:10px;
+                    padding-left: 10px;
                 }
+
             .content-container .submit-table {
-                width:80%;
-                margin:0px 5% 0px 5%;
+                width: 80%;
+                margin: 0px 5% 0px 5%;
             }
+
                 .content-container .submit-table tr {
-                    height:30px;
+                    height: 30px;
                 }
+
                 .content-container .submit-table .column-text {
-                    text-align:right;
+                    text-align: right;
                 }
-                 .content-container .submit-table td {
-                    vertical-align:top;
+
+                .content-container .submit-table td {
+                    vertical-align: top;
                 }
+
                 .content-container .submit-table .table-tips {
-                    font-size:small;
-                    color:gray;
+                    font-size: small;
+                    color: gray;
                 }
+
                 .content-container .submit-table #self-introduction {
-                    width:70%;
-                    height:100px;
-                    resize:none;
+                    width: 70%;
+                    height: 100px;
+                    resize: none;
                 }
+
             .content-container form #submit-button {
-                width:100%;
-                background-color:#2862db;
-                color:white;
-                font-weight:600;
-                height:35px;
-                border-radius:10px;
+                width: 100%;
+                background-color: #2862db;
+                color: white;
+                font-weight: 600;
+                height: 35px;
+                border-radius: 10px;
             }
     </style>
 </head>
@@ -317,7 +347,7 @@
         </div>
         <div class="content-container">
             <h3 class="side-column">这里以后是一个侧栏，这是侧栏的标题</h3>
-            <form action="">
+            <form action="" method="post">
                 <table class="submit-table">
                     <tr>
                         <td><div class="column-text"><span>请输入邮箱地址：</span></div></td>
@@ -354,12 +384,11 @@
                     <tr>
                         <td><div class="column-text"><span class="column-text">个人描述：</span></div></td>
                         <td><textarea name="self-introduction" id="self-introduction">这是一个多行输入框，输入您的个人描述</textarea></td>
-                    </tr>             
+                    </tr>
                 </table>
                 <input type="submit" id="submit-button" value="确认提交" />
             </form>
         </div>
-        </br>
         <footer><h3>版权所有©</h3></footer>
     </div>
 </body>
