@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>任务四</title>
+    <style type="text/css">
+        head,body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #main-container {
+            background-color: #F1EDEC;
+            width: 100%;
+            height: auto;
+            overflow: auto;
+            zoom: 1;
+        }
+
+        #header-container {
+            background-color: rgb(40,40,40);
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            overflow: auto;
+            zoom: 1;
+        }
+
+        header {
+            color: red;
+            float: left;
+            margin-left: 30px;
+        }
+
+        footer {
+            background-color: rgb(40,40,40);
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: white;
+            float:left;
+        }
+
+        nav li {
+            float: right;
+            margin: 10px;
+            font-size:small;
+        }
+
+            nav li a {
+                color: white;
+            }
+
+                nav li a:hover {
+                    color: blue;
+                }
+
+                nav li a:visited {
+                    color: grey;
+                }
+        #main-content {
+            margin:20px 430px 0px 20px;
+        }
+        .content-container {
+            background-color: white;
+            margin: 0px 0px 20px 0px;
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 1px;
+            -moz-box-shadow: 1px 1px 1px;
+            box-shadow: 1px 1px 1px;
+        }
+
+            .content-container h4 {
+                color: rgb(128,128,128);
+            }
+
+            .content-container .writerandtime {
+                font-size: small;
+                color: rgb(128,128,128);
+            }
+
+            .content-container p {
+                line-height: 30px;
+            }
+
+            .content-container ul {
+                overflow: auto;
+                zoom: 1;
+            }
+            .content-container ul li {
+                list-style: none;
+                float:left;
+                margin: 0 20px 20px 0;
+            }
+
+            .content-container .img-container {
+                border: solid;
+                border-color: gray;
+                border-width: 1px;
+                width: 200px;
+                height: 200px;
+                padding: 8px;
+                text-align: center;
+            }
+
+                .content-container .img-container img {
+                    width: 175px;
+                    height: 175px;
+                    margin-top: 8px;
+                }
+
+                .content-container .img-container span {
+                    width: 100%;
+                    text-align: center;
+                    vertical-align: central;
+                }
+
+            .content-container .content-table {
+                width: 100%;
+                border-spacing: 0;
+                border: solid;
+                border-width: 1px;
+                border-color: gray;
+            }
+
+                .content-container .content-table td {
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
+                .content-container .content-table th {
+                    color: white;
+                    background-color: black;
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+
+                .content-container .content-table .table-sum {
+                    color: black;
+                    background-color: grey;
+                    border-spacing: 0;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                }
+        #side-column {
+            background-color: white;
+            margin: 20px 20px;
+            width:350px;
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 1px;
+            -moz-box-shadow: 1px 1px 1px;
+            box-shadow: 1px 1px 1px;
+            float:right;
+        } 
+            #side-column .side-column {
+                border-left: solid;
+                border-width: 3px;
+                border-color: gray;
+                padding: 10px 0px 10px 10px;
+            }
+
+                #side-column .side-column h3 {
+                    padding-left: 10px;
+                }
+
+            #side-column .submit-table {
+                width: 90%;
+                margin: 0px 5% 0px 5%;
+            }
+
+                #side-column .submit-table tr {
+                    height: 30px;
+                }
+
+                #side-column .submit-table .column-text {
+                    text-align: right;
+                }
+
+                #side-column .submit-table td {
+                    vertical-align: top;
+                }
+
+                #side-column .submit-table .table-tips {
+                    font-size: small;
+                    color: gray;
+                }
+
+                #side-column .submit-table #self-introduction {
+                    width: 100%;
+                    height: 80px;
+                    resize: none;
+                }
+
+            #side-column form #submit-button {
+                width: 100%;
+                background-color: #2862db;
+                color: white;
+                font-weight: 600;
+                height: 35px;
+                border-radius: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="header-container">
+            <header><h1>网站一级标题</h1></header>
+            <nav>
+                <ul>
+                    <li><a href="http://ife.baidu.com" target="_blank">导航连接四</a></li>
+                    <li><a href="http://www.baidu.com" target="_blank">导航连接三</a></li>
+                    <li><a href="http://www.baidu.com" target="_blank">导航连接二</a></li>
+                    <li><a href="http://www.baidu.com" target="_blank">导航连接一</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="side-column">
+            <h3 class="side-column">这里以后是一个侧栏，这是侧栏的标题</h3>
+            <form action="" method="post">
+                <table class="submit-table">
+                    <tr>
+                        <td><div class="column-text"><span>请输入邮箱地址：</span></div></td>
+                        <td><input type="email" name="email" value="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span class="table-tips">邮箱地址请按要求格式输入</span></td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">请输入密码：</span></div></td>
+                        <td><input type="password" name="pwd" value="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">请重复输入密码：</span></div></td>
+                        <td><input type="password" name="pwd-again" value="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span class="table-tips">密码请为6-16位英文数字</span></td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">性别：</span></div></td>
+                        <td><input type="radio" name="gendle" />男<input type="radio" name="gendle" />女</td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">城市：</span></div></td>
+                        <td><select><option>北京</option><option>上海</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">爱好：</span></div></td>
+                        <td><input type="checkbox" name="hobby" />运动<input type="checkbox" name="hobby" />艺术<input type="checkbox" name="hobby" />科学</td>
+                    </tr>
+                    <tr>
+                        <td><div class="column-text"><span class="column-text">个人描述：</span></div></td>
+                        <td><textarea name="self-introduction" id="self-introduction">这是一个多行输入框，输入您的个人描述</textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" id="submit-button" value="确认提交" />
+            </form>
+        </div>
+        <div id="main-content">
+            <div class="content-container">
+                <h2>文章一级标题</h2>
+                <h4>文章二级标题</h4>
+                <span class="writerandtime">文章作者</span>&nbsp;<span class="writerandtime">文章发表时间</span>
+                <p>
+                    &nbsp;&nbsp;这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                    </br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                    </br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个超链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，
+                    <b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+                </p>
+                <img src="temp.jpg" />
+                <p>
+                    &nbsp;&nbsp;这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                    </br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口连接到http://ife.baidu.com</a>
+                    这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+                </p>
+            </div>
+            <div class="content-container">
+                <h2>另一篇文章的一级标题</h2>
+                <h4>文章二级标题</h4>
+                <span class="writerandtime">文章作者</span>&nbsp;<span class="writerandtime">文章发表时间</span>
+                <p>
+                    &nbsp;&nbsp;这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                    </br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                    </br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个超链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，
+                    <b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+                </p>
+                <img src="temp.jpg" />
+                <ul>
+                    <li>列表项目一</li>
+                    <li>列表项目二</li>
+                    <li>列表项目三</li>
+                </ul>
+            </div>
+            <div class="content-container">
+                <h2>图片</h2>
+                <ul style="list-style:none">
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <span>好看的图片</span></br>
+                            <img src="temp.jpg" /></br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-container">
+                <h2>最后一篇文章一级标题</h2>
+                <h4>文章二级标题</h4>
+                <span class="writerandtime">文章作者</span>&nbsp;<span class="writerandtime">文章发表时间</span>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <span>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</span>
+                <table class="content-table">
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr class="table-sum">
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer><h3>版权所有©</h3></footer>
+    </div>
+</body>
+</html>
