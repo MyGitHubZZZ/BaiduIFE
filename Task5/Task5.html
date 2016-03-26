@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -86,25 +86,27 @@
                 overflow: auto;
                 zoom: 1;
             }
-            .content-container ul li {
+            .content-container #img-list li {
                 list-style: none;
                 float:left;
                 margin: 0 20px 20px 0;
+                width: 20%;
+                height: 20%;
             }
 
             .content-container .img-container {
                 border: solid;
                 border-color: gray;
                 border-width: 1px;
-                width: 200px;
-                height: 200px;
-                padding: 8px;
+                width: 90%;
+                height: 90%;
+                padding: 5%;
                 text-align: center;
             }
 
                 .content-container .img-container img {
-                    width: 175px;
-                    height: 175px;
+                    width: 87.5%;
+                    height: 87.5%;
                     margin-top: 8px;
                 }
 
@@ -273,7 +275,7 @@
                     </br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个超链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，
                     <b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
                 </p>
-                <img src="temp.jpg" />
+                <img src="temp.jpg" style="width:30%;height:30%;" />
                 <p>
                     &nbsp;&nbsp;这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
                     </br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口连接到http://ife.baidu.com</a>
@@ -290,16 +292,16 @@
                     </br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个超链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，
                     <b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
                 </p>
-                <img src="temp.jpg" />
-                <ul>
-                    <li>列表项目一</li>
-                    <li>列表项目二</li>
-                    <li>列表项目三</li>
+                <img src="temp.jpg" style="width:30%;height:30%;" />
+                <ul style="list-style:none;">
+                    <li style="margin:20px 0;">列表项目一</li>
+                    <li style="margin:20px 0;">列表项目二</li>
+                    <li style="margin:20px 0;">列表项目三</li>
                 </ul>
             </div>
             <div class="content-container">
                 <h2>图片</h2>
-                <ul style="list-style:none">
+                <ul style="list-style:none" id="img-list">
                     <li>
                         <div class="img-container">
                             <span>好看的图片</span></br>
